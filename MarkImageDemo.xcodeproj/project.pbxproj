@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		625974DE55D5625DDD46D663 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA48FFAE30E1D5F6ABB030AC /* libPods.a */; };
 		BD49318D1A37308400878E65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD49318C1A37308400878E65 /* main.m */; };
 		BD4931901A37308400878E65 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD49318F1A37308400878E65 /* AppDelegate.m */; };
 		BD4931931A37308400878E65 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4931921A37308400878E65 /* ViewController.m */; };
@@ -14,6 +15,7 @@
 		BD4931981A37308400878E65 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD4931971A37308400878E65 /* Images.xcassets */; };
 		BD49319B1A37308400878E65 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD4931991A37308400878E65 /* LaunchScreen.xib */; };
 		BD4931A71A37308400878E65 /* MarkImageDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4931A61A37308400878E65 /* MarkImageDemoTests.m */; };
+		BD4931B21A389F6700878E65 /* TagView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4931B11A389F6700878E65 /* TagView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		580A5D4F78677ACDF9839755 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		BD4931871A37308400878E65 /* MarkImageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarkImageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD49318B1A37308400878E65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD49318C1A37308400878E65 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +43,10 @@
 		BD4931A01A37308400878E65 /* MarkImageDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarkImageDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD4931A51A37308400878E65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD4931A61A37308400878E65 /* MarkImageDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarkImageDemoTests.m; sourceTree = "<group>"; };
+		BD4931B01A389F6700878E65 /* TagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagView.h; sourceTree = "<group>"; };
+		BD4931B11A389F6700878E65 /* TagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagView.m; sourceTree = "<group>"; };
+		EA48FFAE30E1D5F6ABB030AC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDEFEE3814062DE4CAD4FBEC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				625974DE55D5625DDD46D663 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +68,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC277C0E6E6CC5ED5A6C5A09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FDEFEE3814062DE4CAD4FBEC /* Pods.debug.xcconfig */,
+				580A5D4F78677ACDF9839755 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BD4181551D61BAA4A11619CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA48FFAE30E1D5F6ABB030AC /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BD49317E1A37308400878E65 = {
 			isa = PBXGroup;
 			children = (
 				BD4931891A37308400878E65 /* MarkImageDemo */,
 				BD4931A31A37308400878E65 /* MarkImageDemoTests */,
 				BD4931881A37308400878E65 /* Products */,
+				AC277C0E6E6CC5ED5A6C5A09 /* Pods */,
+				BD4181551D61BAA4A11619CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +116,8 @@
 				BD4931971A37308400878E65 /* Images.xcassets */,
 				BD4931991A37308400878E65 /* LaunchScreen.xib */,
 				BD49318A1A37308400878E65 /* Supporting Files */,
+				BD4931B01A389F6700878E65 /* TagView.h */,
+				BD4931B11A389F6700878E65 /* TagView.m */,
 			);
 			path = MarkImageDemo;
 			sourceTree = "<group>";
@@ -126,9 +155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD4931AA1A37308400878E65 /* Build configuration list for PBXNativeTarget "MarkImageDemo" */;
 			buildPhases = (
+				A3526426E7C13AC7C79B144B /* Check Pods Manifest.lock */,
 				BD4931831A37308400878E65 /* Sources */,
 				BD4931841A37308400878E65 /* Frameworks */,
 				BD4931851A37308400878E65 /* Resources */,
+				3E62EF8209305EF85342AFA2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,6 +199,7 @@
 				TargetAttributes = {
 					BD4931861A37308400878E65 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = LMU58WLMLD;
 					};
 					BD49319F1A37308400878E65 = {
 						CreatedOnToolsVersion = 6.1;
@@ -214,6 +246,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3E62EF8209305EF85342AFA2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3526426E7C13AC7C79B144B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BD4931831A37308400878E65 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -222,6 +287,7 @@
 				BD4931931A37308400878E65 /* ViewController.m in Sources */,
 				BD4931901A37308400878E65 /* AppDelegate.m in Sources */,
 				BD49318D1A37308400878E65 /* main.m in Sources */,
+				BD4931B21A389F6700878E65 /* TagView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,21 +407,31 @@
 		};
 		BD4931AB1A37308400878E65 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDEFEE3814062DE4CAD4FBEC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MarkImageDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		BD4931AC1A37308400878E65 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 580A5D4F78677ACDF9839755 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MarkImageDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -412,6 +488,7 @@
 				BD4931AC1A37308400878E65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BD4931AD1A37308400878E65 /* Build configuration list for PBXNativeTarget "MarkImageDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +497,7 @@
 				BD4931AF1A37308400878E65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
